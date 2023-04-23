@@ -33,6 +33,7 @@
         border-radius: 0%;
         background-color: rebeccapurple;
         left: 0%;
+        top: 0%;
         color: white;
         
     }
@@ -51,7 +52,8 @@
     100% {
         border-radius: 100%;
         background-color: white;
-        left: calc(100% - 15rem);  
+        left: calc(100% - 15rem);
+        top: calc(100% - 15rem);  
         color: black;
     }
 }
@@ -98,5 +100,6 @@ body {
         background-color: rebeccapurple;
         font-size: 1rem;
         animation-name: trans2;
+        animation-duration: 2s;
     }
 }
