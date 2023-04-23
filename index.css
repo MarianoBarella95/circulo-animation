@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@keyframes transformar {
+    0% {
+        border-radius: 0%;
+        background-color: rebeccapurple;
+        left: 0%;
+        color: white;
+        
+    }
+
+    50% {
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+    }
+
+    75% {
+        border-radius: 30%;
+        color: white;
+    }
+
+    100% {
+        border-radius: 100%;
+        background-color: white;
+        left: calc(100% - 30rem);  
+        color: black;
+    }
+}
+
+@keyframes trans2 {
+    0% {
+        border-radius: 0%;
+        background-color: rebeccapurple;
+        left: 0%;
+        color: white;
+        
+    }
+
+    50% {
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+    }
+
+    75% {
+        border-radius: 30%;
+        color: white;
+    }
+
+    100% {
+        border-radius: 100%;
+        background-color: white;
+        left: calc(100% - 15rem);  
+        color: black;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,48 +63,40 @@
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
 
-@keyframes transformar {
-    0% {
-        border-radius: 0%;
-        background-color: rebeccapurple;
-    }
-
-    50% {
-        border-radius: 50%;
-        background-color: red;
-    }
-
-    75% {
-        border-radius: 30%;
-    }
-
-    100% {
-        border-radius: 100%;
-        background-color: white;
-    }
-}
-
 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0rem;
     width: 30rem;
     height: 30rem;
     background-color: rebeccapurple;
+    text-align: center;
     animation-name: transformar;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: ease-out;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 3rem;
 }
 
 @media (max-width: 600px) {
+
     .box {
         width: 15rem;
         height: 15rem;
         background-color: rebeccapurple;
+        font-size: 1rem;
+        animation-name: trans2;
     }
-    
 }
